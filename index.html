@@ -1,54 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Miduga - Desarrollo web, Wordpress y aplicaciones para Android y iPhone</title>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-<meta name="description" content="Portfolio de Miguel &Aacute;ngel Dur&aacute;n: Desarrollo web, Wordpress, Firefox OS" />
-<meta name="keywords" content="desarrollo web, desarrollo wordpress, desarrollo aplicaciones moviles, programador wordpress, desarrollo firefox os"/>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-<link rel="stylesheet" href="css/style.css" />
-<script>
-WebFontConfig = {
-google: { families: [ 'Roboto+Condensed:400,300:latin' ] }
-};
-(function() {
-var wf = document.createElement('script');
-wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-wf.type = 'text/javascript';
-wf.async = 'true';
-var s = document.getElementsByTagName('script')[0];
-s.parentNode.insertBefore(wf, s);
-})();
-(function(a,b,c){typeof c["module"]!="undefined"&&c.module.exports?c.module.exports=b():typeof c["define"]!="undefined"&&c["define"]=="function"&&c.define.amd?define(a,b):c[a]=b()})("$script",function(){function p(a,b){for(var c=0,d=a.length;c<d;++c)if(!b(a[c]))return j;return 1}function q(a,b){p(a,function(a){return!b(a)})}function r(a,b,i){function o(a){return a.call?a():d[a]}function t(){if(!--n){d[m]=1,l&&l();for(var a in f)p(a.split("|"),o)&&!q(f[a],o)&&(f[a]=[])}}a=a[k]?a:[a];var j=b&&b.call,l=j?b:i,m=j?a.join(""):b,n=a.length;return setTimeout(function(){q(a,function(a){if(h[a])return m&&(e[m]=1),h[a]==2&&t();h[a]=1,m&&(e[m]=1),s(!c.test(a)&&g?g+a+".js":a,t)})},0),r}function s(c,d){var e=a.createElement("script"),f=j;e.onload=e.onerror=e[o]=function(){if(e[m]&&!/^c|loade/.test(e[m])||f)return;e.onload=e[o]=null,f=1,h[c]=2,d()},e.async=1,e.src=c,b.insertBefore(e,b.firstChild)}var a=document,b=a.getElementsByTagName("head")[0],c=/^https?:\/\//,d={},e={},f={},g,h={},i="string",j=!1,k="push",l="DOMContentLoaded",m="readyState",n="addEventListener",o="onreadystatechange";return!a[m]&&a[n]&&(a[n](l,function t(){a.removeEventListener(l,t,j),a[m]="complete"},j),a[m]="loading"),r.get=s,r.order=function(a,b,c){(function d(e){e=a.shift(),a.length?r(e,d):r(e,b,c)})()},r.path=function(a){g=a},r.ready=function(a,b,c){a=a[k]?a:[a];var e=[];return!q(a,function(a){d[a]||e[k](a)})&&p(a,function(a){return d[a]})?b():!function(a){f[a]=f[a]||[],f[a][k](b),c&&c(e)}(a.join("|")),r},r},this);
-$script(['http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'], 'jquery');
-$script(['js/funciones.js']);
-var _gaq=[['_setAccount','UA-30525085-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))
-</script>
-<!--[if lt IE 9]><script src='http://wildgam.es/cdn/html5.js'></script><![endif]-->
+  <head>
+    <title>Miduga  con React Native</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Desarroll" />
+    <meta name="keywords" content="desarrollo web, desarrollo wordpress, desarrollo aplicaciones moviles, programador wordpress, desarrollo firefox os"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','UA-30525085-1','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
 <body>
 
-<header>
-<a href="#quienSoy">¿QUIÉN SOY?</a>
-<a href="#masDeMi">MÁS DE MI</a>
-<a href="#trabajos">ALGUNOS TRABAJOS</a>
-</header>
+  <header>
+    <a href="#quienSoy">¿QUIÉN SOY?</a>
+    <a href="#masDeMi">MÁS DE MI</a>
+    <a href="#trabajos">ALGUNOS TRABAJOS</a>
+  </header>
 
-<section id="quienSoy" class="clearfix">
-<article>
-<h1>¿QUIÉN SOY?</h1>
-<img id="miFoto" class="alignRight" src="/img/yo.jpg" width="230" height="407" />
-<p id="lema">Hago webs y apps <span id="dynamo" data-lines="creativas,bonitas,limpias,sencillas,usables,dinámicas">rápidas</span><br />Lo mejor: disfruto con ello</p>
+  <section id="quienSoy" class="clearfix">
+    <article>
+      <h1>¿QUIÉN SOY?</h1>
+      <img id="miFoto" class="alignRight" src="/img/yo.jpg" width="230" height="407" />
+      <p id="lema">Hago webs y apps <span id="dynamo" data-lines="creativas,bonitas,limpias,sencillas,usables,dinámicas">rápidas</span><br />Lo mejor: disfruto con ello</p>
 
-<div id="botonesSociales">
-<a target="_blank" href="http://es.linkedin.com/in/miduga"><img id="linkedinBoton" src="/img/linkedin.png" alt="LinkedIn" width="64" height="64" /></a>
-<a target="_blank" href="http://twitter.com/#!/wildgames"><img id="twitterBoton" src="/img/twitter.png" alt="Twitter" width="64" height="64" /></a>
-<a target="_blank" href="https://github.com/miduga"><img id="githubBoton" src="/img/github.png" alt="Github" width="64" height="64" /></a>
-</div>
+      <div id="botonesSociales">
+        <a target="_blank" href="http://es.linkedin.com/in/miduga"><img id="linkedinBoton" src="/img/linkedin.png" alt="LinkedIn" width="64" height="64" /></a>
+        <a target="_blank" href="http://twitter.com/#!/wildgames"><img id="twitterBoton" src="/img/twitter.png" alt="Twitter" width="64" height="64" /></a>
+        <a target="_blank" href="https://github.com/miduga"><img id="githubBoton" src="/img/github.png" alt="Github" width="64" height="64" /></a>
+      </div>
 
-</article>
-</section>
+    </article>
+  </section>
 
 <section id="masDeMi" class="clearfix">
 <article>
